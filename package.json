@@ -1,7 +1,7 @@
 {
   "name": "gatsby-theme-about-me",
   "main": "index.js",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.0",
   "scripts": {
     "clean": "gatsby clean",
     "develop": "gatsby develop",
