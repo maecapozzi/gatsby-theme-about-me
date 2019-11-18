@@ -1,6 +1,5 @@
 {
   "name": "gatsby-theme-about-me",
-  "private": true,
   "main": "index.js",
   "version": "1.0.0",
   "scripts": {
