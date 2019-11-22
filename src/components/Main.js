@@ -10,7 +10,8 @@ const Main = ({ children }) => (
       gridArea: `main`,
       padding: [`50px`, `25vh 20px`],
       textAlign: [``, `left`],
-      minWidth: `200px`
+      minWidth: `200px`,
+      height: `100vh`
     }}
   >
     {children}

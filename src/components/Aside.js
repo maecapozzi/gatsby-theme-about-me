@@ -9,8 +9,9 @@ const Aside = ({ children }) => (
       alignItems: `center`,
       color: `primary`,
       gridArea: `asideLeft`,
-      padding: [`20px`, `0px 200px`],
-      textAlign: [`center`, `left`]
+      minWidth: [``, `600px`],
+      padding: [`20px`],
+      textAlign: [`center`, `right`]
     }}
   >
     {children}
