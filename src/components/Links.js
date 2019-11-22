@@ -6,9 +6,9 @@ const Links = ({ links }) => (
     {links.map(link => {
       return (
         <li>
-          <Link link={link.link}>
-            <p>{link.name}</p>
-          </Link>
+          <p>
+            <Link link={link.link}>{link.name}</Link>
+          </p>
         </li>
       );
     })}
