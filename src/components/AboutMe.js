@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from "react"; // eslint-disable-line no-unused-vars
 import { jsx } from "theme-ui";
-
+import Link from "gatsby-link";
 import Aside from "./Aside";
 import Grid from "./Grid";
 import Links from "./Links";
@@ -13,6 +13,16 @@ const AboutMe = ({ sections, bio, img }) => {
   return (
     <Grid>
       <Aside>
+        <h1>
+          <Link
+            href="/"
+            sx={{
+              color: `primary`
+            }}
+          >
+            Home
+          </Link>
+        </h1>
         <ProfilePic img={img.node.childImageSharp.fluid} />
         <div
           sx={{
