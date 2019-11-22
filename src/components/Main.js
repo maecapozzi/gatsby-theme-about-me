@@ -5,7 +5,7 @@ import { jsx } from "theme-ui";
 const Main = ({ children }) => (
   <div
     sx={{
-      background: `primary`,
+      bg: `primary`,
       color: `secondary`,
       gridArea: `main`,
       padding: [`50px`, `230px 20px`],

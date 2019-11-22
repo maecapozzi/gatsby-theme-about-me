@@ -5,7 +5,7 @@ import { jsx } from "theme-ui";
 const Text = ({ text }) => (
   <p
     sx={{
-      fontSize: `16`
+      fontSize: `3`
     }}
   >
     {text}

@@ -6,7 +6,7 @@ const Link = ({ link, children }) => (
   <a
     sx={{
       color: `tertiary`,
-      fontSize: `12`
+      fontSize: `2`
     }}
     href={link}
   >
