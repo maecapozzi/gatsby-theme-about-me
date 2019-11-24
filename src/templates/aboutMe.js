@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import AboutMe from "../components/AboutMe";
 import Layout from "../components/Layout";
 
@@ -7,6 +8,7 @@ export const query = graphql`
     staticPage(id: { eq: $pageId }) {
       name
       bio
+      profilePicAltText
       sections {
         id
         links {
@@ -44,10 +46,27 @@ const AboutMeTemplate = ({ data }) => {
     image = img;
   });
 
-  const { name, sections, bio } = data.staticPage;
+  const {
+    name,
+    sections,
+    bio,
+    profilePicAltText,
+    documentLanguage
+  } = data.staticPage;
   return (
     <Layout>
-      <AboutMe name={name} sections={sections} bio={bio} img={image} />
+      <Helmet>
+        <meta charSet="utf-8" />
+        <html lang={documentLanguage} />
+        <title>{name}</title>
+      </Helmet>
+      <AboutMe
+        name={name}
+        sections={sections}
+        bio={bio}
+        img={image}
+        profilePicAltText={profilePicAltText}
+      />
     </Layout>
   );
 };

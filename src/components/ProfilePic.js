@@ -3,7 +3,7 @@ import React from "react";
 import Img from "gatsby-image";
 import { jsx } from "theme-ui";
 
-const ProfilePic = ({ img }) => (
+const ProfilePic = ({ img, profilePicAltText }) => (
   <div
     sx={{
       marginTop: [``, `25vh`]
@@ -21,6 +21,7 @@ const ProfilePic = ({ img }) => (
           height: `200px`,
           width: `200px`
         }}
+        alt={profilePicAltText}
         fluid={img}
       ></Img>
     </div>

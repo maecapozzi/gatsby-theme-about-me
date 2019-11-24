@@ -3,7 +3,7 @@ import React from "react";
 import { jsx } from "theme-ui";
 
 const Grid = ({ children }) => (
-  <div
+  <section
     sx={{
       display: [`block`, `grid`],
       height: `100vh`,
@@ -13,7 +13,7 @@ const Grid = ({ children }) => (
     }}
   >
     {children}
-  </div>
+  </section>
 );
 
 export default Grid;

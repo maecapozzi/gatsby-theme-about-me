@@ -9,7 +9,7 @@ import Main from "./Main";
 import ProfilePic from "./ProfilePic";
 import Text from "./Text";
 
-const AboutMe = ({ sections, bio, img }) => {
+const AboutMe = ({ sections, bio, img, profilePicAltText }) => {
   return (
     <Grid>
       <Aside>
@@ -23,7 +23,10 @@ const AboutMe = ({ sections, bio, img }) => {
             Home
           </Link>
         </h1>
-        <ProfilePic img={img.node.childImageSharp.fluid} />
+        <ProfilePic
+          img={img.node.childImageSharp.fluid}
+          altText={profilePicAltText}
+        />
         <div
           sx={{
             marginTop: `40px`

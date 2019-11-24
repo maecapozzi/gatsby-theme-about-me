@@ -20,9 +20,9 @@ exports.onPreBootstrap = ({ reporter, store }, options) => {
   }
 };
 
-// 2. Define the pa ge type
+// 2. Define the page type
 exports.sourceNodes = ({ actions }) => {
-  actions.createTypes(`
+  const types = `
     type Link {
       name: String!
       link: String
@@ -33,20 +33,22 @@ exports.sourceNodes = ({ actions }) => {
       header: String
       links: [Link!]
     }
-  `);
 
-  actions.createTypes(`
-    type StaticPage implements Node @dontInfer {
+     type StaticPage implements Node @dontInfer {
       id: ID!
       name: String!
+      documentLanguage: String!
       bio: String!
+      profilePicAltText: String!
       sections: [Section!]!
       slug: String!
-    }`);
+    }
+  `;
+
+  actions.createTypes(types);
 };
 
 // 3. Define resolvers for any custom fields (slug)
-
 exports.createResolvers = ({ createResolvers }, options) => {
   const basePath = options.basePath || "/";
 
@@ -77,6 +79,8 @@ exports.createPages = async ({ actions, graphql, reporter }, options) => {
             id
             name
             bio
+            documentLanguage
+            profilePicAltText
             sections {
               header
               links {

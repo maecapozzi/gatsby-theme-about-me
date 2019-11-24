@@ -1,7 +1,7 @@
 {
   "name": "gatsby-theme-about-me",
   "main": "index.js",
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0-beta.8",
   "scripts": {
     "clean": "gatsby clean",
     "develop": "gatsby develop",
@@ -14,14 +14,15 @@
   },
   "devDependencies": {
     "gatsby": "^2.13.70",
+    "gatsby-plugin-sharp": "2.3.3-sharp-cache.43",
     "react": "^16.8.6",
     "react-dom": "^16.8.2"
   },
   "dependencies": {
     "gatsby-image": "^2.2.33",
-    "gatsby-plugin-sharp": "^2.3.0",
     "gatsby-source-filesystem": "^2.1.36",
     "gatsby-transformer-json": "^2.2.17",
-    "gatsby-transformer-sharp": "^2.3.5"
+    "gatsby-transformer-sharp": "^2.3.5",
+    "react-helmet": "^5.2.1"
   }
 }
