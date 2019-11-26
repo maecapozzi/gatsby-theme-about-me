@@ -1,4 +1,4 @@
-# gatsby-theme-about-me
+# gatsby-theme-about-me (in beta, so expect frequent changes)
 
 A gatsby theme to quickly build about pages for your blog. While this theme is currently live at https://maecapozzi.com/about-me, it's still in beta, and as such has some kinks to work out!
 
