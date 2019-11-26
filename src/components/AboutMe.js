@@ -9,7 +9,7 @@ import Main from "./Main";
 import ProfilePic from "./ProfilePic";
 import Text from "./Text";
 
-const AboutMe = ({ sections, bio, img, profilePicAltText }) => {
+const AboutMe = ({ name, sections, bio, img, profilePicAltText }) => {
   return (
     <Grid>
       <Aside>
@@ -20,7 +20,7 @@ const AboutMe = ({ sections, bio, img, profilePicAltText }) => {
               color: `primary`
             }}
           >
-            Home
+            {name}
           </Link>
         </h1>
         <ProfilePic

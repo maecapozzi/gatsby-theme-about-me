@@ -1,7 +1,7 @@
 {
   "name": "gatsby-theme-about-me",
   "main": "index.js",
-  "version": "1.0.0-beta.8",
+  "version": "1.0.0-beta.13",
   "scripts": {
     "clean": "gatsby clean",
     "develop": "gatsby develop",
@@ -10,7 +10,8 @@
   "peerDependencies": {
     "gatsby": "^2.13.70",
     "react": "^16.8.6",
-    "react-dom": "^16.8.2"
+    "react-dom": "^16.8.2",
+    "theme-ui": "^0.2.49"
   },
   "devDependencies": {
     "gatsby": "^2.13.70",
@@ -19,6 +20,8 @@
     "react-dom": "^16.8.2"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.22",
+    "@mdx-js/react": "^1.5.1",
     "gatsby-image": "^2.2.33",
     "gatsby-source-filesystem": "^2.1.36",
     "gatsby-transformer-json": "^2.2.17",
