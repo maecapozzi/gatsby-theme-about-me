@@ -13,15 +13,12 @@ const AboutMe = ({ name, sections, bio, img, profilePicAltText }) => {
   return (
     <Grid>
       <Aside>
-        <h1>
-          <Link
-            href="/"
-            sx={{
-              color: `primary`
-            }}
-          >
-            {name}
-          </Link>
+        <h1
+          sx={{
+            color: `primary`
+          }}
+        >
+          {name}
         </h1>
         <ProfilePic
           img={img.node.childImageSharp.fluid}
